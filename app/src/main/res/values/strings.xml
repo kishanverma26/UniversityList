@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Universities list</string>
+    <string name="search_universities">Search Universities</string>
+    <string name="enter_country_name">Enter Country Name</string>
+    <string name="search">Search</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="webview">WebView</string>
+</resources>

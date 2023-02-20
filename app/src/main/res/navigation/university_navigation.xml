@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/universityNavigation"
+    app:startDestination="@id/universitySearchFragment">
+
+    <fragment
+        android:id="@+id/universitySearchFragment"
+        android:name="com.example.universitieslist.ui.fragments.UniversitySearchFragment"
+        android:label="UniversitySearchFragment"
+        tools:layout="@layout/university_search_fragment">
+        <action
+            android:id="@+id/search_to_list"
+            app:destination="@id/universityListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/universityListFragment"
+        android:name="com.example.universitieslist.ui.fragments.UniversityListFragment"
+        android:label="UniversityListFragment"
+        tools:layout="@layout/university_list_fragment">
+        <action
+            android:id="@+id/list_to_webview"
+            app:destination="@id/universityWebViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universityWebViewFragment"
+        android:name="com.example.universitieslist.ui.fragments.UniversityWebViewFragment"
+        android:label="UniversityWebViewFragment"
+        tools:layout="@layout/university_webview_fragment"/>
+
+
+</navigation>
